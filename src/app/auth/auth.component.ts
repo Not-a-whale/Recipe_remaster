@@ -18,7 +18,7 @@ export class AuthComponent implements OnDestroy, OnInit {
     error: string = null;
     private closeSub: Subscription;
     private storeSub: Subscription;
-    @ViewChild(PlaceholderDirective, {static: false}) alertHost: PlaceholderDirective;
+    @ViewChild(PlaceholderDirective) alertHost: PlaceholderDirective;
 
     constructor (private componentFactoryResolver: ComponentFactoryResolver, private store: Store<fromApp.AppState>) {
 
